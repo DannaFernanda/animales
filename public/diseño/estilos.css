@@ -1,0 +1,155 @@
+/* Navbar Styles */
+.navbar {
+    background: linear-gradient(to right, #AEC6CF, #F9EBEA, #C3B1E1); /* Azul pastel, rosa pastel, morado pastel */
+    padding: 15px;
+}
+
+.navbar-brand {
+    color: #fff;
+}
+
+.navbar-brand img.logo {
+    max-height: 40px;
+}
+
+.navbar-toggler-icon {
+    color: #fff;
+}
+
+/* Menú Colapsado */
+.navbar-collapse {
+    background-color: #f8f9fa;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos para los elementos del menú */
+.navbar-nav {
+    margin-top: 10px;
+}
+
+.nav-item {
+    margin-right: 15px;
+}
+
+.nav-link {
+    color: #495057;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: #007BFF;
+}
+
+/* Estilos para el menú de usuario autenticado */
+.dropdown-menu {
+    background-color: #ffffff;
+}
+
+.dropdown-item {
+    color: #3498db;
+}
+
+.dropdown-item:hover {
+    background-color: #C3B1E1;
+    color: #ffffff;
+}
+
+/* Botones de Login y Registro */
+.navbar-nav .nav-item a.btn-primary,
+.navbar-nav .nav-item a.btn-secondary {
+    background-color: #C3B1E1;
+    border: 2px solid #C3B1E1;
+    margin: 10px 0;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.navbar-nav .nav-item a.btn-primary:hover,
+.navbar-nav .nav-item a.btn-secondary:hover {
+    background-color: #fff;
+    color: #C3B1E1;
+}
+
+.navbar-nav .nav-item a.btn-primary:active,
+.navbar-nav .nav-item a.btn-secondary:active {
+    border-color: #C3B1E1;
+}
+
+.card .card-header {
+    background-color: #C3B1E1;
+    color: #fff;
+}
+
+.btn.btn-primary {
+    background-color: #C3B1E1;
+    border-color: #C3B1E1;
+    color: #fff;
+}
+
+#email,
+#password,
+#name,
+#password-confirm 
+{
+    border-color: #C3B1E1;
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+    .navbar-nav .nav-item {
+        margin-right: 10px;
+    }
+
+    .navbar-nav .nav-item a.btn-secondary.plateado,
+    .navbar-nav .nav-item.dropdown .btn-secondary.plateado {
+        background-color: #C3B1E1;
+        border-color: #C3B1E1;
+        color: #000;
+    }
+}
+
+/* Estilos para el contenedor del botón */
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajusta la altura según sea necesario para centrar verticalmente */
+}
+
+/* Estilos para el botón */
+.btn-primary {
+    background-color: #9768c8; /* Color lila */
+    color: #000; /* Texto negro */
+    border: none;
+    border-radius: 5px; /* Esquinas redondeadas */
+    padding: 5px 10px; /* Ajusta el relleno según sea necesario */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    /* Agrega otros estilos según sea necesario */
+}
+
+.btn-primary:hover {
+    background-color: #8452c7; /* Cambia el color al pasar el mouse si lo deseas */
+    /* Agrega otros estilos de hover según sea necesario */
+}
+/* Estilos para el contenedor del botón */
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajusta la altura según sea necesario para centrar verticalmente */
+}
+
+/* Estilos para el botón de reset de contraseña */
+.btn-primary {
+    background-color: #8452c7; /* Color lila */
+    color: #000; /* Texto negro */
+    border: none;
+    border-radius: 5px; /* Esquinas redondeadas */
+    padding: 10px 20px; /* Ajusta el relleno según sea necesario */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    /* Agrega otros estilos según sea necesario */
+}
+
+.btn-primary:hover {
+    background-color: #6a3ea6; /* Cambia el color al pasar el mouse si lo deseas */
+    /* Agrega otros estilos de hover según sea necesario */
+}

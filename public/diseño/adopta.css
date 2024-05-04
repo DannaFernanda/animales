@@ -1,0 +1,349 @@
+/* General styles */
+body {
+    font-family: 'DM Serif Display', serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  /* Header styles */
+  header {
+    background: linear-gradient(to right, #AEC6CF, #F9EBEA, #C3B1E1);
+    color: #0c0606;
+    padding: 10px 20px;
+    width: 100%; /* Assuming you still want the header to be 100% of its container width */
+    height: 85px; /* Set a fixed height for the header */
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 100px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  
+  /* Main title styles */
+  h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0c0606;
+    margin: 0;
+    padding-top: 10px;
+  }
+  
+  /* Styles for "Animals LLS" */
+  .logo .nombre-empresa {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem; /* Increase the font size here */
+    font-weight: 600;
+    margin-left: 5px; /* Adjust the space to the left according to your design */
+  }
+  
+  h6 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 0.8em; /* Adjust font size as desired */
+    cursor: pointer; /* Indicate clickable element */
+  }
+  
+  h6:hover {
+    color: #C5A1FF; /* Change color on hover (optional) */
+  }
+  
+  h6:active {
+    color: #C5A1FF; /* Change color on click (optional) */
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    background-color: white; /* Light background color */
+    padding: 1px 0; /* Adjust padding as needed */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .navbar-brand {
+    font-family: 'Dancing Script', cursive; /* Use your preferred font */
+    font-size: 24px; /* Adjust font size as desired */
+    color: #333; /* Dark text color */
+  }
+  
+  .navbar-toggler {
+    border: none; /* Remove default border */
+    background-color: transparent; /* Transparent background */
+  }
+  
+  .navbar-toggler .navbar-toggler-icon {
+    color: black; /* Dark icon color */
+    font-size: 24px; /* Adjust icon size as needed */
+  }
+  
+  .navbar-collapse {
+    max-width: 100%; /* Ensure the menu doesn't exceed the container width */
+  }
+  
+  .navbar-nav {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+  }
+  
+  .nav-item {
+    flex: 1; /* Distribute space evenly among nav items */
+    text-align: center; /* Center the links */
+  }
+  
+  .nav-link {
+    font-family: 'Dancing Script', cursive; /* Use your preferred font */
+    font-size: 18px; /* Adjust font size as desired */
+    color: #333; /* Dark text color */
+    padding: 10px 15px; /* Adjust padding if needed */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+  }
+  
+  .nav-link:hover {
+    background-color: #E9ECEF; /* Light background on hover */
+  }
+  
+  .navbar-expand-lg .navbar-collapse {
+    display: flex; /* Flexbox for responsive layout */
+    flex-direction: column; /* Stack items vertically on small screens */
+    align-items: center; /* Center items horizontally */
+  }
+  
+  .navbar-expand-lg .navbar-toggler {
+    position: absolute; /* Position the toggle button */
+}
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .item {
+    width: calc(50% - 20px); /* Ancho de cada columna (50% con espacio entre columnas) */
+    margin: 10px;
+  }
+  
+  @media (min-width: 768px) {
+    .item {
+      width: calc(33.33% - 20px); /* Ancho de cada columna en pantallas medianas (33.33% con espacio entre columnas) */
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .item {
+      width: calc(25% - 20px); /* Ancho de cada columna en pantallas grandes (25% con espacio entre columnas) */
+    }
+  }
+  
+  .item img {
+    width: 100%;
+    height: 100%; /* Establece el alto de la imagen al 100% para que todas sean del mismo tamaño */
+    object-fit: cover; /* Ajusta el tamaño de la imagen para que se ajuste al contenedor sin distorsionarla */
+  }
+
+  /* Agregar estas reglas para el botón "Adóptame" */
+.btn-adoptame {
+    display: block;
+    margin: 0 auto; /* Centrar horizontalmente */
+    background: linear-gradient(to right, #AEC6CF, #F9EBEA, #C3B1E1);
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 5px; /* Borde redondeado */
+    cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+  }
+  
+  .btn-adoptame:hover {
+    background-color: #C3B1E1; /* Mantener color de fondo al pasar el cursor */
+    color: #000000; /* Cambiar color de texto al pasar el cursor */
+  }
+  
+  /**/
+  #section-1 {
+    display: flex;
+    justify-content: center; /* Centrar el contenido horizontalmente */
+    align-items: center; /* Centrar el contenido verticalmente */
+    height: 50vh; /* Altura del 100% del viewport */
+  }
+  
+  .container-main {
+    max-width: 1500px; /* Ancho máximo del contenedor */
+    width: 100%; /* Ancho completo */
+  }
+  
+  .container {
+    background-color: #f0f0f0;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse; /* Invertir el orden de los elementos */
+  }
+  
+  .image-container {
+    flex: 1;
+    max-width: 50%; /* Tamaño máximo del contenedor de la imagen */
+  }
+  
+  .text-container {
+    flex: 2;
+    padding: 0 20px; /* Espacio de relleno en los lados */
+  }
+  
+  .image-container img {
+    max-width: 100%; /* Tamaño máximo de la imagen */
+    height: auto; /* Altura automática para mantener la proporción */
+  }
+  
+  
+/***********************************************************************************/
+#section-2 {
+    display: flex;
+    justify-content: center; /* Centrar el contenido horizontalmente */
+    align-items: center; /* Centrar el contenido verticalmente */
+    height: 45vh; /* Altura del 100% del viewport */
+  }
+  
+  .container-main {
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    width: 100%; /* Ancho completo */
+    padding: 0 20px; /* Espacio de relleno */
+  }
+  
+  .container {
+    background-color: #f0f0f0;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse; /* Invertir el orden de los elementos */
+  }
+  
+  .image-container {
+    flex: 1;
+  }
+  
+  .text-container {
+    flex: 2;
+    padding: 0 20px; /* Espacio de relleno en los lados */
+  }
+  
+  /*____________________________________________________________________________________________*/
+  #section-3 {
+    display: flex;
+    justify-content: center; /* Centrar el contenido horizontalmente */
+    align-items: center; /* Centrar el contenido verticalmente */
+    height: 85vh; /* Altura del 100% del viewport */
+  }
+  
+  #section-3 .container {
+    background-color: #f0f0f0;
+    padding: 20px;
+    max-width: 1140px; /* Ancho máximo del contenedor */
+    width: 100%; /* Ancho completo */
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row-reverse; /* Invertir el orden de los elementos */
+    height: 73vh;
+  }
+  
+  #section-3 .image-container {
+    flex: 1;
+    margin-right: 50px; /* Espacio entre la imagen y el texto */
+  }
+  
+  #section-3 .image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  #section-3 .text-container {
+    flex: 2;
+    padding: 0 20px; /* Espacio de relleno en los lados */
+  }
+
+
+
+  /*____________________________________________________________________________________________*/
+/* Sección 4 */
+/* Sección 4 */
+/* Sección 4 */
+#section-4 {
+  width: 100%;
+  margin: 0;
+  text-align: center;
+}
+
+#section-4 .container {
+  background-color: #f0f0f0;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Estilos para la sección 5 */
+#section-5 {
+  padding: 50px 0;
+  background-color: #f8f9fa;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+.card-header {
+  background: linear-gradient(to right, #AEC6CF, #F9EBEA, #C3B1E1);
+  color: #000000;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.btn-adoptame,
+.btn-secondary,
+.btn-primary {
+  background: linear-gradient(to right, #AEC6CF, #F9EBEA, #C3B1E1);
+  color: #000000;
+  border-color: #AEC6CF; /* Color del borde igual al color del botón */
+  display: block;
+  width: 50%;
+  margin: 0 auto; /* Para centrar los botones */
+}
+
+.btn-adoptame:hover,
+.btn-secondary:hover,
+.btn-primary:hover {
+  background-color: #218838;
+  border-color: #218838;
+}
+
+.filter {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+#section-5 .card-img-top.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.card-perro .card-img-top {
+  width: 100%;
+  height: 200px; /* Ajusta la altura de las imágenes según sea necesario */
+  object-fit: cover; /* Para mantener la proporción de la imagen */
+}
+
+.card-perro .card-title {
+  text-align: center; /* Centra el texto de los nombres de los perros */
+}

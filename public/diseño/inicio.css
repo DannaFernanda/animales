@@ -1,0 +1,318 @@
+/* General styles */
+body {
+  font-family: 'DM Serif Display', serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Header styles */
+header {
+  background: linear-gradient(to right, #AEC6CF, #F9EBEA, #C3B1E1);
+  color: #0c0606;
+  padding: 10px 20px;
+  width: 100%; /* Assuming you still want the header to be 100% of its container width */
+  height: 85px; /* Set a fixed height for the header */
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+/* Main title styles */
+h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #0c0606;
+  margin: 0;
+  padding-top: 10px;
+}
+
+/* Styles for "Animals LLS" */
+.logo .nombre-empresa {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem; /* Increase the font size here */
+  font-weight: 600;
+  margin-left: 5px; /* Adjust the space to the left according to your design */
+}
+
+h6 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 0.8em; /* Adjust font size as desired */
+  cursor: pointer; /* Indicate clickable element */
+}
+
+h6:hover {
+  color: #C5A1FF; /* Change color on hover (optional) */
+}
+
+h6:active {
+  color: #C5A1FF; /* Change color on click (optional) */
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: white; /* Light background color */
+  padding: 1px 0; /* Adjust padding as needed */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.navbar-brand {
+  font-family: 'Dancing Script', cursive; /* Use your preferred font */
+  font-size: 24px; /* Adjust font size as desired */
+  color: #333; /* Dark text color */
+}
+
+.navbar-toggler {
+  border: none; /* Remove default border */
+  background-color: transparent; /* Transparent background */
+}
+
+.navbar-toggler .navbar-toggler-icon {
+  color: black; /* Dark icon color */
+  font-size: 24px; /* Adjust icon size as needed */
+}
+
+.navbar-collapse {
+  max-width: 100%; /* Ensure the menu doesn't exceed the container width */
+}
+
+.navbar-nav {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.nav-item {
+  flex: 1; /* Distribute space evenly among nav items */
+  text-align: center; /* Center the links */
+}
+
+.nav-link {
+  font-family: 'Dancing Script', cursive; /* Use your preferred font */
+  font-size: 18px; /* Adjust font size as desired */
+  color: #333; /* Dark text color */
+  padding: 10px 15px; /* Adjust padding if needed */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.nav-link:hover {
+  background-color: #E9ECEF; /* Light background on hover */
+}
+
+.navbar-expand-lg .navbar-collapse {
+  display: flex; /* Flexbox for responsive layout */
+  flex-direction: column; /* Stack items vertically on small screens */
+  align-items: center; /* Center items horizontally */
+}
+
+.navbar-expand-lg .navbar-toggler {
+  position: absolute; /* Position the toggle button */
+}
+
+main #section-1 {
+  width: 100%;
+  height: 600px;
+  background: url(https://www.clarin.com/img/2021/10/29/n6hwnc5ha_2000x1500__1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+main #section-1 .textos-header {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 50px;
+}
+
+main #section-1 .textos-header h1 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 50px;
+  color: #fff;
+  margin-bottom: 10px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+main #section-1 .textos-header h3 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 20px;
+  font-weight: 300;
+  color: #ffffff;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+main #section-1 .wave {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.transparent-btn {
+  color: #ffffff;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; /* Borde negro */
+  font-size: 15px;
+  background-color: transparent; /* Fondo transparente */
+  border: none; /* Sin borde */
+  transition: background-color 0.3s ease-in-out; /* Transición suave */
+}
+
+.transparent-btn:hover,
+.transparent-btn:active {
+  background-color: transparent; /* Fondo transparente cuando se pasa el mouse o se hace clic */
+}
+
+/* seccion dos y tres */
+/* Estilos para la sección 2 */
+#section-2 {
+  background-color: #ffffff;
+}
+
+/* Estilos para el título */
+.titulo {
+  font-family: 'DM Serif Display', serif;
+  text-align: center;
+  font-size: 50px;
+}
+
+/* Estilos para la sección 3 */
+/* Estilos para la sección 3 */
+#section-3 {
+  background-color: #eed4ff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  height: auto; /* Altura automática según el contenido */
+}
+
+/* Estilos para la cuadrícula de información */
+.informacion {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Dos columnas en una fila */
+  gap: 20px; /* Espacio entre las columnas */
+  justify-content: center; /* Centrar las columnas horizontalmente */
+  align-items: stretch; /* Estirar los elementos verticalmente */
+}
+
+/* Estilos para cada columna de información */
+.columna {
+  padding: 20px; /* Ajustar el espaciado interno */
+  background-color: #fff;
+  border-radius: 5px;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex; /* Utilizar flexbox para alinear contenido verticalmente */
+  flex-direction: column; /* Alinear el contenido en columna */
+  height: 100%; /* Altura igual para todas las columnas */
+}
+
+/* Estilos para el título de la columna */
+.columna h2 {
+  margin-bottom: 10px;
+}
+
+/* Estilos para las imágenes dentro de la columna */
+.columna img {
+  max-width: 100%; /* Ancho máximo del contenedor */
+  height: auto; /* Altura automática para mantener la proporción */
+  object-fit: cover; /* Ajustar la imagen para cubrir el contenedor */
+  border-radius: 5px; /* Borde redondeado */
+}
+ 
+
+
+/* Estilo para el formulario de comentarios en la sección 4 */
+#section-4 {
+  display: flex; /* Utilizar flexbox */
+  justify-content: space-between; /* Distribuir elementos horizontalmente */
+  max-width: 1000px; /* Ancho máximo del contenedor */
+  margin: 0 auto; /* Centrar el contenedor horizontalmente */
+  padding: 20px; /* Espaciado interno */
+}
+
+/* Estilo para las estrellas del formulario */
+.star-rating .far,
+.star-rating .fa {
+  color: #f2c94c; /* Color de las estrellas */
+  font-size: 1.5em; /* Tamaño de las estrellas (ajusta según sea necesario) */
+}
+
+/* Estilo para el formulario (a la derecha) */
+form {
+  flex: 1; /* Ocupar todo el espacio disponible */
+  margin-left: 20px; /* Espacio a la izquierda para separar de los comentarios */
+  width: 20rem; /* Ancho del formulario de 20 unidades */
+}
+
+/* Estilo para la sección de comentarios (a la izquierda) */
+#comentarios-lista {
+  width: 20rem; /* Ancho de 20 unidades (por ejemplo, 20rem) */
+  height: 20rem; /* Alto de 20 unidades (por ejemplo, 20rem) */
+  padding: 10px; /* Espaciado interno */
+  list-style-type: none; /* Quitar viñetas de la lista */
+  overflow: hidden; /* Ocultar la barra de desplazamiento */
+  margin: 0 auto; /* Centrar el nav horizontalmente */
+}
+/* Estilos para la paginación */
+.pagination {
+  display: flex; /* Utilizar flexbox para centrar */
+  justify-content: center; /* Centrar elementos horizontalmente */
+  padding: 10px 0; /* Espaciado interno vertical */
+  border-radius: 5px; /* Borde redondeado */
+}
+
+/* Estilo para los enlaces de la paginación */
+.page-link {
+  color: #8a2be2; /* Color morado */
+  padding: 5px 10px; /* Espaciado interno de los enlaces */
+  text-decoration: none; /* Quitar subrayado de los enlaces */
+  transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+  border-radius: 3px; /* Borde redondeado */
+  margin: 0 3px; /* Espaciado entre enlaces */
+}
+
+/* Estilo para el color de fondo al pasar el mouse por encima */
+.page-link:hover,
+.page-link:focus {
+  background-color: #ddd; /* Color de fondo al pasar el mouse */
+  border-radius: 3px; /* Borde redondeado al pasar el mouse */
+}
+
+/* Estilo para el enlace seleccionado */
+.page-link.active,
+.page-link:focus {
+  background-color: #8a2be2; /* Color morado cuando está seleccionado */
+  color: #fff; /* Texto blanco cuando está seleccionado */
+}
+
+
+
+/* Estilo para el botón primario */
+#section-4 .btn.btn-primary {
+  background-color: #8a2be2; /* Color lila */
+  color: #ffffff; /* Texto blanco */
+  padding: 10px 20px; /* Espaciado interno */
+  border-radius: 5px; /* Borde redondeado */
+  border: none; /* Sin borde */
+  cursor: pointer; /* Cursor tipo puntero al pasar el mouse */
+  font-size: 16px; /* Tamaño de fuente */
+}
+
+#section-4 .btn.btn-primary:hover {
+  background-color: #6a1a9e; /* Cambio de color al pasar el mouse */
+}
+
+.change {
+  background-color: #6a1a9e;
+  
+}

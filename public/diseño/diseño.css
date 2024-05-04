@@ -1,0 +1,170 @@
+/* Estilos generales */
+body {
+    font-family: 'DM Serif Display', serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  /* Estilos para el encabezado */
+  header {
+    background: linear-gradient(to right, #AEC6CF, #F9EBEA, #C3B1E1);
+    color: #0c0606;
+    padding: 10px 20px;
+    width: 100%; /* Assuming you still want the header to be 10% of its container width */
+    height: 85px; /* Set a fixed height for the header */
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 100px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  
+  /* Estilos para el título principal */
+  h1 {
+   
+     font-family: 'Dancing Script', cursive;      
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0c0606;
+    margin: 0;
+    padding-top: 10px;
+  }
+  
+  
+  /* Estilos para el carrusel */
+  #carouselExampleIndicators {
+    width: 80%;
+    height: 100%;
+    margin: 10px 10px;
+  }
+  
+  .carousel-inner .carousel-item img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px; /* Optional for rounded corners */
+  
+    max-height: 420px; /* Ajusta el valor según tus necesidades */
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    color: transparent;
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    color: #fff;
+  }
+  
+  /* Estilos para los botones del encabezado */
+  .btn {
+    margin-right: 10px;
+  }
+  
+  /* Estilo específico para "Animals LLS" */
+  .logo .nombre-empresa {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem; /* Increase the font size here */
+    font-weight: 600;
+    margin-left: 5px; /* Ajusta el espacio a la izquierda según tu diseño */
+  }
+  
+h6 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 0.8em; /* Adjust font size as desired */
+    cursor: pointer; /* Indicate clickable element */
+  }
+  
+  h6:hover {
+    color: #C5A1FF; /* Change color on hover (optional) */
+  }
+  
+  h6:active {
+    color: #C5A1FF; /* Change color on click (optional) */
+  }
+/* Navbar Styles */
+.navbar {
+    background-color: white; /* Light background color */
+    padding: 1px 0; /* Adjust padding as needed */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+
+  }
+  
+  .navbar-brand {
+    font-family: 'Dancing Script', cursive; /* Use your preferred font */
+    font-size: 24px; /* Adjust font size as desired */
+    color: #333; /* Dark text color */
+  }
+  
+  .navbar-toggler {
+    border: none; /* Remove default border */
+    background-color: transparent; /* Transparent background */
+  }
+  
+  .navbar-toggler .navbar-toggler-icon {
+    color: black; /* Dark icon color */
+    font-size: 24px; /* Adjust icon size as needed */
+  }
+  
+  .navbar-collapse {
+    max-width: 100%; /* Ensure the menu doesn't exceed the container width */
+  }
+  
+  .navbar-nav {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+  }
+  
+  .nav-item {
+    flex: 1; /* Distribute space evenly among nav items */
+    text-align: center; /* Center the links */
+  }
+  
+  .nav-link {
+    font-family: 'Dancing Script', cursive; /* Use your preferred font */
+    font-size: 18px; /* Adjust font size as desired */
+    color: #333; /* Dark text color */
+    padding: 10px 15px; /* Adjust padding if needed */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+  }
+  
+  .nav-link:hover {
+    background-color: #E9ECEF; /* Light background on hover */
+  }
+  
+  .navbar-expand-lg .navbar-collapse {
+    display: flex; /* Flexbox for responsive layout */
+    flex-direction: column; /* Stack items vertically on small screens */
+    align-items: center; /* Center items horizontally */
+  }
+  
+  .navbar-expand-lg .navbar-toggler {
+    position: absolute; /* Position the toggle button */
+    top: 50%; /* Center vertically */
+    left: 30px; /* Adjust left margin if needed */
+    transform: translateY(-50%); /* Center vertically */
+  }
+  
+  .navbar-expand-lg .navbar-toggler .navbar-toggler-icon {
+    display: inline-block; /* Display the icon */
+    width: 24px; /* Adjust icon size as needed */
+    height: 24px; /* Adjust icon size as needed */
+    vertical-align: middle; /* Align with text */
+  }
+  
+  .navbar-expand-lg .navbar-collapse .nav-item {
+    flex: 1; /* Distribute space evenly among nav items */
+    margin-bottom: 10px; /* Add space between links */
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-expand-lg .navbar-collapse {
+      flex-direction: row; /* Align items horizontally on small screens */
+    }
+  }
+  
